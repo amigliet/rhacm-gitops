@@ -1,0 +1,2 @@
+resources:
+  - argocd_openshift-gitops_default.yaml
