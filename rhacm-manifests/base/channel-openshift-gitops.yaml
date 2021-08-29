@@ -9,7 +9,7 @@ metadata:
     apps.open-cluster-management.io/reconcile-rate: high
 spec:
   type: Git
-  pathname: https://github.com/christianmarangoni/ocp-gitops.git
+  pathname: https://github.com/amigliet/rhacm-gitops.git
 ### custom ca cert for repo connection
 ##  configMapRef: 
 ##    name: name of configmap
