@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  policy.csv: |
+    g, amigliet@redhat.com, role:admin
+    g, cmarango@redhat.com, role:admin
+  policy.default: role:readonly
+  scopes: '[groups,email]'
+kind: ConfigMap
+metadata:
+  labels:
+    app.kubernetes.io/managed-by: openshift-gitops
+    app.kubernetes.io/name: argocd-rbac-cm
+    app.kubernetes.io/part-of: argocd
+  name: argocd-rbac-cm
+  namespace: openshift-gitops
