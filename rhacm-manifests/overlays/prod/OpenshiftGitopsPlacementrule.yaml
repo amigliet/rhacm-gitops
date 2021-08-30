@@ -11,4 +11,4 @@ spec:
       status: "True"
   clusterSelector:
     matchLabels:
-      role: "bc"
+      role: "active"

@@ -1,7 +1,7 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: openshift-gitops-subscription
+  name: openshift-gitops-apps-subscription
   namespace: openshift-gitops
   labels:
     app: argocd
@@ -11,7 +11,7 @@ metadata:
     apps.open-cluster-management.io/deployables: ''
     apps.open-cluster-management.io/git-branch: main
     apps.open-cluster-management.io/git-current-commit: ''
-    apps.open-cluster-management.io/git-path: gitops-manifests/operator
+    apps.open-cluster-management.io/git-path: gitops-manifests/resources/prod
     apps.open-cluster-management.io/reconcile-option: replace
 spec:
   channel: ns-channel-ocpgitops/channel-openshift-gitops

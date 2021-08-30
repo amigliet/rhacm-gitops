@@ -4,22 +4,9 @@ metadata:
   name: channel-openshift-gitops
   namespace: ns-channel-ocpgitops
   labels:
-   app: openshift-gitops
+    app:  openshift-gitops
   annotations:
     apps.open-cluster-management.io/reconcile-rate: high
 spec:
   type: Git
   pathname: https://github.com/amigliet/rhacm-gitops.git
-### custom ca cert for repo connection
-##  configMapRef: 
-##    name: name of configmap
-### certificate insecure 
-##  insecureSkipVerify: true 
-### reference for secret for channel
-##  secretRef: reference for secret for channel
-##    name:
-### ssh git connection setup
-##data: 
-##  sshKey: LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQ21GbGN6STFOaTFqZEhJQUFBQUdZbU55ZVhCMEFBQUFHQUFBQUJDK3YySHhWSIwCm8zejh1endzV3NWODMvSFVkOEtGeVBmWk5OeE5TQUgcFA3Yk1yR2tlRFFPd3J6MGIKOUlRM0tKVXQzWEE0Zmd6NVlrVFVhcTJsZWxxVk1HcXI2WHF2UVJ5Mkc0NkRlRVlYUGpabVZMcGVuaGtRYU5HYmpaMmZOdQpWUGpiOVhZRmd4bTNnYUpJU3BNeTFLWjQ5MzJvOFByaDZEdzRYVUF1a28wZGdBaDdndVpPaE53b0pVYnNmYlZRc0xMS1RrCnQwblZ1anRvd2NEVGx4TlpIUjcwbGVUSHdGQTYwekM0elpMNkRPc3RMYjV2LzZhMjFHRlMwVmVXQ3YvMlpMOE1sbjVUZWwKSytoUWtxRnJBL3BUc1ozVXNjSG1GUi9PV25FPQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0K
-##  passphrase: cGFzc3cwcmQK
-##type: Opaque
