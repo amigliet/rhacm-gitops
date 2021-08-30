@@ -45,7 +45,7 @@ spec:
     route:
       enabled: false
   ha:
-    enabled: false
+    enabled: true
     resources:
       limits:
         cpu: 500m
