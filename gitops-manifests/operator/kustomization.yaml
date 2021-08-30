@@ -1,2 +1,4 @@
 resources:
-  - argocd_openshift-gitops_default.yaml
+  - argocd-openshift-gitops_custom.yaml
+  - argocd-rbac-cm.yaml
+  - clusterrolebinding.yaml
