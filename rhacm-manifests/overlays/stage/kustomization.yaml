@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+  - ../../base/
+
+resources:
+  - application-openshift-gitops.yaml
+  - placementrule-openshift-gitops.yaml
+  - subscription-openshift-gitops-apps.yaml
+  - subscription-openshift-gitops.yaml

@@ -1,8 +1,0 @@
-bases:
-  - ../../base/
-
-resources:
-  - ApplicationOpenshiftGitops.yaml
-  - OpenshiftGitopsPlacementrule.yaml
-  - OpenshiftGitopsAppsSubscription.yaml
-  - OpenshiftGitopsSubscription.yaml
