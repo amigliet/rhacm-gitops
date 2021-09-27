@@ -1,7 +1,7 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: openshift-gitops-apps-subscription
+  name: openshift-gitops-apps-subscription-stage
   namespace: openshift-gitops
   labels:
     app: argocd
@@ -18,4 +18,4 @@ spec:
   placement:
     placementRef:
       kind: PlacementRule
-      name: openshift-gitops-placementrule
+      name: openshift-gitops-placementrule-stage

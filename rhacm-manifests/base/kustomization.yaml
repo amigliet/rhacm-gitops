@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - namespace-channel-ocpgitops.yaml
   - channel-openshift-gitops.yaml
+  - application-openshift-gitops.yaml

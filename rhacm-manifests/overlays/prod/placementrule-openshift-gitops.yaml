@@ -1,7 +1,7 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: openshift-gitops-placementrule-stage
+  name: openshift-gitops-placementrule-prod
   namespace: openshift-gitops
   labels:
     app: argocd
@@ -11,4 +11,4 @@ spec:
       status: "True"
   clusterSelector:
     matchLabels:
-      role: "stage-active"
+      role: "prod-active"
