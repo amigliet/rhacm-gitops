@@ -1,0 +1,12 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: PlacementBinding
+metadata:
+  name: openshift-gitops-placementbinding-prod
+placementRef:
+  name: openshift-gitops-placementrule-prod
+  kind: PlacementRule
+  apiGroup: apps.open-cluster-management.io
+subjects:
+  - name: openshift-gitops-installed-prod
+    kind: Policy
+    apiGroup: policy.open-cluster-management.io
