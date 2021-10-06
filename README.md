@@ -33,8 +33,8 @@ The folder-based approach has the following main advantages:
 
 ## Prerequisites
 To use this repo you need to have in your enviroment:
-* RHACM MultiClusterHub installed on an OpenShift Cluster
-* OpenShift Gitops operator installed on an OpenShift Cluster
+* RHACM MultiClusterHub installed on an OpenShift Cluster.
+* At least one OpenShift Cluster on which to install OpenShift Gitops operator.
 
 ## How to deploy resources on RHACM Hub
 * Login into RHACM Hub cluster.
