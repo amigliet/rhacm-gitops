@@ -2,6 +2,7 @@ apiVersion: policy.open-cluster-management.io/v1
 kind: Policy
 metadata:
   name: openshift-gitops-installed-prod
+  namespace: openshift-gitops
   annotations:
     policy.open-cluster-management.io/standards: NIST 800-53
     policy.open-cluster-management.io/categories: CM Configuration Management
