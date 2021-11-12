@@ -15,7 +15,10 @@ spec:
         cpu: 250m
         memory: 512Mi
   controller:
-    processors: {}
+    parallelismLimit: 20
+    processors:
+      operation: 25
+      status: 50
     resources:
       limits:
         cpu: "2"
@@ -23,7 +26,11 @@ spec:
       requests:
         cpu: 250m
         memory: 1Gi
+    sharding:
+      enabled: true
+      replicas: 3
   dex:
+    openShiftOAuth: true
     resources:
       limits:
         cpu: 500m
@@ -61,7 +68,8 @@ spec:
     route:
       enabled: false
   rbac:
-    scopes: '[groups,email]'
+    policy: g, system:cluster-admins, role:admin
+    scopes: '[groups]'
   redis:
     resources:
       limits:
@@ -74,7 +82,7 @@ spec:
     resources:
       limits:
         cpu: "1"
-        memory: 512Mi
+        memory: 1Gi
       requests:
         cpu: 250m
         memory: 256Mi
@@ -90,7 +98,7 @@ spec:
     autoscale:
       enabled: true
       hpa:
-        maxReplicas: 10
+        maxReplicas: 5
         minReplicas: 1
         scaleTargetRef:
           kind: Deployment
@@ -111,7 +119,5 @@ spec:
       enabled: true
     service:
       type: ""
-  sso:
-    provider: keycloak
   tls:
     ca: {}
