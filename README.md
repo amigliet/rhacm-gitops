@@ -1,6 +1,6 @@
 # Red Hat Advanced Cluster Management and OpenShift GitOps
 
-An effective way to manage OpenShift Gitops instances with RHACM.
+A flexible way to manage OpenShift Gitops instances with RHACM.
 
 ## Why this approach is worth considering
 This repo is designed to enhance GitOps approach leveraged by OpenShift GitOps
