@@ -68,6 +68,7 @@ spec:
     route:
       enabled: false
   rbac:
+    defaultPolicy: role:readonly
     policy: g, system:cluster-admins, role:admin
     scopes: '[groups]'
   redis:

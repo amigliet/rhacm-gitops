@@ -3,5 +3,4 @@ kind: Kustomization
 
 resources:
   - argocd-openshift-gitops_default.yaml
-  - argocd-rbac-cm.yaml
   - clusterrolebinding.yaml
