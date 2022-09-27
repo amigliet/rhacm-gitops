@@ -5,4 +5,3 @@ resources:
   - namespace-channel-ocpgitops.yaml
   - namespace-openshift-gitops.yaml
   - channel-openshift-gitops.yaml
-  - application-openshift-gitops.yaml

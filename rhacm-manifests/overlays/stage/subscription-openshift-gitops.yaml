@@ -4,13 +4,9 @@ metadata:
   name: openshift-gitops-subscription-stage
   namespace: openshift-gitops
   labels:
-    app: argocd
-    app.kubernetes.io/part-of: argocd
-    apps.open-cluster-management.io/reconcile-rate: high
+    acm-app: argocd-stage
   annotations:
-    apps.open-cluster-management.io/deployables: ''
     apps.open-cluster-management.io/git-branch: main
-    apps.open-cluster-management.io/git-current-commit: ''
     apps.open-cluster-management.io/git-path: gitops-manifests/operator/overlays/stage
     apps.open-cluster-management.io/reconcile-option: replace
 spec:

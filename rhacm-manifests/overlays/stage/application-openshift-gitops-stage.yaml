@@ -1,12 +1,10 @@
 apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
-  name: argocd
+  name: argocd-stage
   namespace: openshift-gitops
   labels:
-    app: argocd
-  annotations:
-    apps.open-cluster-management.io/deployables: ''
+    acm-app: argocd-stage
 spec:
   componentKinds:
     - group: apps.open-cluster-management.io
@@ -14,7 +12,7 @@ spec:
   descriptor: {}
   selector:
     matchExpressions:
-      - key: app
+      - key: acm-app
         operator: In
         values:
-          - argocd
+          - argocd-stage

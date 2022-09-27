@@ -4,11 +4,11 @@ metadata:
   name: openshift-gitops-placementrule-stage
   namespace: openshift-gitops
   labels:
-    app: argocd
+    acm-app: argocd-stage
 spec:
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
   clusterSelector:
     matchLabels:
-      role: "stage-active"
+      argocd-stage: "True"

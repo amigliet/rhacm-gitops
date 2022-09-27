@@ -4,11 +4,11 @@ metadata:
   name: openshift-gitops-placementrule-prod
   namespace: openshift-gitops
   labels:
-    app: argocd
+    acm-app: argocd-prod
 spec:
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
   clusterSelector:
     matchLabels:
-      role: "prod-active"
+      argocd-prod: "True"
